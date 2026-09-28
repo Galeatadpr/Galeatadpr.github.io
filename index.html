@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name — Game Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6EFE3;--ink:#3B2A1E;--muted:#7A6555;--accent:#D9782D;--tile:#E6D6BE;--line:1px solid #CDB89B}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:17px/1.7 Karla,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.15}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:var(--line)}
+nav{max-width:920px;margin:auto;padding:16px 24px;display:flex;gap:28px;flex-wrap:wrap;align-items:center}
+nav b{font-family:Fraunces,serif;font-size:1.15rem;margin-right:auto}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--accent)}
+main{max-width:920px;margin:auto;padding:0 24px}
+section{padding:80px 0 0}
+.hero{padding-top:110px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.5rem);max-width:16ch;font-weight:700}
+.hero p{max-width:50ch;margin-top:24px;color:var(--muted);font-size:1.15rem}
+.btn{display:inline-block;margin-top:32px;padding:11px 26px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border-radius:4px}
+.btn:hover{background:#B8621F}
+h2{font-size:2rem;margin-bottom:28px;padding-bottom:12px;border-bottom:var(--line)}
+h3{font-size:1.4rem;margin-bottom:10px}
+.about{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:start}
+.ph{background:var(--tile);color:var(--muted);display:grid;place-items:center;text-align:center;font-size:.85rem;padding:8px;aspect-ratio:4/3;overflow:hidden;border-radius:4px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.about .ph{aspect-ratio:1}
+.game{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:56px;align-items:center}
+.tags{color:var(--muted);font-size:.9rem;margin-bottom:12px}
+.game p+p{margin-top:12px}
+.sub{margin-bottom:44px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.grid .ph{aspect-ratio:1}
+.contact{list-style:none;padding:0}
+.contact li{border-bottom:var(--line)}
+.contact a{display:flex;justify-content:space-between;gap:16px;padding:16px 0;color:var(--ink);text-decoration:none;font-family:Fraunces,serif;font-size:1.2rem}
+.contact a span{font:400 .95rem Karla,sans-serif;color:var(--muted)}
+.contact a:hover{color:var(--accent)}
+footer{max-width:920px;margin:96px auto 0;padding:24px;color:var(--muted);font-size:.9rem}
+@media(max-width:700px){.about,.game{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><nav>
+<b>Dabu Alexandru Dimitrie</b>
+<a href="#home">Home</a><a href="#about">About Me</a><a href="#games">Games</a><a href="#art">3D &amp; 2D Art</a><a href="#contact">Contact</a>
+</nav></header>
+
+<main>
+<section id="home" class="hero">
+<h1>Unity Game developer and designer.</h1>
+<p>This portfolio presents two completed games, the artwork created for them, and an overview of my approach to game design.</p>
+<a class="btn" href="#games">View Games</a>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="about">
+<div class="ph"><img src="images/me.jpg" alt="Me" loading="lazy"></div>
+<div>
+<p>I'm a university student who loves game development. I enjoy creating games in Unity and making 3D models in Blender. I'm always excited to learn new things and bring my ideas to life.</p>
+<p>Tools: Unity, C#, Blender, Krita, Git.</p>
+</div>
+</div>
+</section>
+
+<section id="games">
+<h2>Games</h2>
+
+<article class="game" id="solo-unity-game">
+<div class="ph"><img src="images/solo-game.jpg" alt="Solo Game" loading="lazy"></div>
+<div>
+<h3>Arsonists' Paradise</h3>
+<div class="tags">Unity · C# · Solo project</div>
+<p>A 2D strategy puzzle game developed independently in Unity and C#, featuring resource management, daily events, multiple endings, and strategic decision-making. Implemented using object-oriented programming (OOP) principles.</p>
+<p><a href="https://bucket-dpr.itch.io/arsonists-paradise">Play on itch.io</a>
+</div>
+</article>
+
+<article class="game" id="brackeys-game-jam">
+<div class="ph"><img src="images/jam.jpg" alt="Jam" loading="lazy"></div>
+<div>
+<h3>Brackeys Game Jam 2025.1</h3>
+<div class="tags">Game jam · Unity · Team project</div>
+<p>A 2D survival game developed in Unity and C# during a one-week game jam with a team of four, based on the theme “Nothing Can Go Wrong.” Role: Head Designer / Gameplay Programmer. I designed the core gameplay and progression systems, while also implementing basic gameplay logic and UI interactions. The game features misleading upgrades that can negatively affect the player, with progression centered around discovering and unlocking every upgrade.</p>
+<p><a href="https://tuga06.itch.io/potatosurvivors">Play on itch.io</a> &nbsp;|&nbsp; <a href="https://itch.io/jam/brackeys-13">Jam page</a></p>
+</div>
+</article>
+</section>
+
+<section id="art">
+<h2>3D &amp; 2D Art</h2>
+
+<div class="sub" id="blender">
+<h3>Blender</h3>
+<div class="grid">
+<div class="ph"><img src="images/blender-1.jpg" alt="Blender 1" loading="lazy"></div>
+<div class="ph"><img src="images/blender-2.jpg" alt="Blender 2" loading="lazy"></div>
+<div class="ph"><img src="images/blender-3.jpg" alt="Blender 3" loading="lazy"></div>
+<div class="ph"><img src="images/blender-4.jpg" alt="Blender 4" loading="lazy"></div>
+<div class="ph"><img src="images/blender-5.jpg" alt="Blender 5" loading="lazy"></div>
+</div>
+</div>
+
+<div class="sub" id="pixel-art">
+<h3>Pixel Art</h3>
+<div class="grid">
+<div class="ph"><img src="images/pixel-1.png" alt="Pixel 1" loading="lazy"></div>
+<div class="ph"><img src="images/pixel-2.png" alt="Pixel 2" loading="lazy"></div>
+<div class="ph"><img src="images/pixel-3.png" alt="Pixel 3" loading="lazy"></div>
+<div class="ph"><img src="images/pixel-4.png" alt="Pixel 4" loading="lazy"></div>
+<div class="ph"><img src="images/pixel-5.png" alt="Pixel 5" loading="lazy"></div>
+<div class="ph"><img src="images/pixel-6.png" alt="Pixel 6" loading="lazy"></div>
+<div class="ph"><img src="images/pixel-animation.gif" alt="Pixel Animation" loading="lazy"></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<ul class="contact">
+<li><a href="https://github.com/Galeatadpr">GitHub <span>github.com/Galeatadpr</span></a></li>
+<li><a href="https://www.linkedin.com/in/alexandru-dimitrie-dabu-6152b8394">LinkedIn <span>linkedin.com/in/alexandru-dimitrie-dabu-6152b8394</span></a></li>
+<li><a href="mailto:alecsdabupublc@gmail.com">Email <span>alecsdabupublc@gmail.com</span></a></li>
+<li><a href="cv.pdf" download>CV <span>Download PDF</span></a></li>
+</ul>
+</section>
+</main>
+<footer>© 2026 Dabu Alexandru Dimitrie</footer>
+</body>
+</html>
